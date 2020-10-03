@@ -19,7 +19,7 @@ and let <b><i>S</i></b> be
 |2|1|
 |6|8|
 
-The schema of $R$ is $\{A,B\}$, and the instance of $R$ is $\{(1,2),(3,4)\}$. The schema of $S$ is $\{B,C\}$, and the instance of $S$ is $\{(2,1),(6,8)\}$. Although the schema is a set, its order should be consistent with the tuples in the instance. If we change the order in the schema, we also have to change the order of the tuples in the instance. The following is another representation of $R$.
+The schema of <b><i>R</i></b> is <b>\{A,B\}</b>, and the instance of <b><i>R</i></b> is <b>\{(1,2),(3,4)\}</b>. The schema of $S$ is $\{B,C\}$, and the instance of $S$ is $\{(2,1),(6,8)\}$. Although the schema is a set, its order should be consistent with the tuples in the instance. If we change the order in the schema, we also have to change the order of the tuples in the instance. The following is another representation of $R$.
 
 $$
 \begin{array}{c|c}
