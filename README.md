@@ -4,7 +4,7 @@
 
 Codd's relational model forms the basis of SQL databases and is one of the most commonly used data models.
 
-In this model, a database is composed of relations. A relation can be thought of as a table, but to be more precise, it has a schema, which is a set of attributes, and an instance, which is a set of tuples corresponding to the attributes. For example, let <b>R</b> be
+In this model, a database is composed of relations. A relation can be thought of as a table, but to be more precise, it has a schema, which is a set of attributes, and an instance, which is a set of tuples corresponding to the attributes. For example, let <b><i>R</i></b> be
 
 $$
 \begin{array}{c|c}
