@@ -79,7 +79,7 @@ Union gives tuples that are in any of its operands, but it requires that the sch
 
 ### 5. Difference ( &minus; )
 
-Difference gives tuples that are in the first operand but not in the second operand. As with union, it requires that the schemata of the operands match. For example, $R-S$ is not allowed because the schema of $R$ ($\{A,B\}$) is different from that of $S$ ($\{B,C\}$). However, we can apply rename to $S$ and then apply difference: $R-(\rho_{C\to A}S)$ results in
+Difference gives tuples that are in the first operand but not in the second operand. As with union, it requires that the schemata of the operands match. For example, <b><i>R &minus; S</i></b> is not allowed because the schema of <b><i>R</i>({ A, B \})</b> is different from that of <b><i>S</i>({ B, C \})</b>. However, we can apply rename to <b><i>S</i></b> and then apply difference: <b><i>R &minus; (&rho;<sub>C&rarr;A</sub>S)</i></b> results in
 
 |<i>A</i>|<i>B</i>|
 |---|---|
@@ -87,7 +87,7 @@ Difference gives tuples that are in the first operand but not in the second oper
 
 ### 6. Cartesian product ( &times; )
 
-Cartesian product gives tuples resulting from concatenation of two tuples, one from each operand. If there are common attributes, the attribute is prefixed with the name of the relation it comes from followed by a dot. For example, $R\times S$ results in
+Cartesian product gives tuples resulting from concatenation of two tuples, one from each operand. If there are common attributes, the attribute is prefixed with the name of the relation it comes from followed by a dot. For example, <b><i>R &times; S</i></b> results in
 
 |<i>A</i>|<i>R.B</i>|<i>S.B</i>|<i>C</i>|
 |---|---|---|---|
