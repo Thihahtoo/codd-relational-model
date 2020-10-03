@@ -35,8 +35,8 @@ The relational algebra has the following operations:
 1. Selection (_&sigma;_)
 2. Projection (_&pi;_)
 3. Rename (_&rho;_)
-4. Cartesian product ($\times$)
-5. Union ($\cup$)
+4. Cartesian product (_&times;_)
+5. Union (_&cup;_)
 6. Difference ($-$)
 
 The first three are unary operations (requiring one operand), and the others are binary operations (requiring two operands). Each operand is a relation, and the result of each operation is also a relation.
