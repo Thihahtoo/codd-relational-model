@@ -32,16 +32,16 @@ Since the set of tuples is a set, the order of the "rows" is not important, and 
 
 The relational algebra has the following operations:
 
-1. Selection (_&sigma;_)
-2. Projection (_&pi;_)
-3. Rename (_&rho;_)
-4. Cartesian product (_&times;_)
-5. Union (_&cup;_)
-6. Difference (_&minus;_)
+1. Selection ( _&sigma;_ )
+2. Projection ( _&pi;_ )
+3. Rename ( _&rho;_ )
+4. Union ( _&cup;_ )
+5. Difference ( _&minus;_ )
+6. Cartesian product ( _&times;_ )
 
 The first three are unary operations (requiring one operand), and the others are binary operations (requiring two operands). Each operand is a relation, and the result of each operation is also a relation.
 
-### 1. Selection (_&sigma;_)
+### 1. Selection ( _&sigma;_ )
 
 Selection picks tuples satisfying a condition. For example, $\sigma_{A>1}R$ results in
 
@@ -53,7 +53,7 @@ A&B\\
 \end{array}
 $$
 
-### 2. Projection ($\pi$)
+### 2. Projection ( _&pi;_ )
 
 Projection picks attributes. For example, $\pi_AR$ results in
 
@@ -66,7 +66,7 @@ A\\
 \end{array}
 $$
 
-### 3. Rename ($\rho$)
+### 3. Rename ( _&rho;_ )
 
 Rename changes the names of the attributes in the schema. For example, $\rho_{C\to A}S$ results in
 
@@ -79,7 +79,7 @@ B&A\\
 \end{array}
 $$
 
-### 4. Union ($\cup$)
+### 4. Union ( _&cup;_ )
 
 Union gives tuples that are in any of its operands, but it requires that the schemata of the operands match. For example, $R\cup S$ is not allowed because the schema of $R$ ($\{A,B\}$) is different from that of $S$ ($\{B,C\}$). However, we can apply rename to $S$ and then apply union: $R\cup(\rho_{C\to A}S)$ results in
 
@@ -93,7 +93,7 @@ A&B\\
 \end{array}
 $$
 
-### 5. Difference ($-$)
+### 5. Difference ( _&minus;_ )
 
 Difference gives tuples that are in the first operand but not in the second operand. As with union, it requires that the schemata of the operands match. For example, $R-S$ is not allowed because the schema of $R$ ($\{A,B\}$) is different from that of $S$ ($\{B,C\}$). However, we can apply rename to $S$ and then apply difference: $R-(\rho_{C\to A}S)$ results in
 
@@ -105,7 +105,7 @@ A&B\\
 \end{array}
 $$
 
-### 6. Cartesian product ($\times$)
+### 6. Cartesian product ( _&times;_ )
 
 Cartesian product gives tuples resulting from concatenation of two tuples, one from each operand. If there are common attributes, the attribute is prefixed with the name of the relation it comes from followed by a dot. For example, $R\times S$ results in
 
