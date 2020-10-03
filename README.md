@@ -43,41 +43,29 @@ The first three are unary operations (requiring one operand), and the others are
 
 ### 1. Selection ( _&sigma;_ )
 
-Selection picks tuples satisfying a condition. For example, _&sigma_{A>1}R;_ $\sigma_{A>1}R$ results in
+Selection picks tuples satisfying a condition. For example, _&sigma; results in
 
-$$
-\begin{array}{c|c}
-A&B\\
-\hline
-3&4\\
-\end{array}
-$$
+|<i>A</i>|<i>B</i>|
+|---|---|
+|3|4|
 
 ### 2. Projection ( _&pi;_ )
 
 Projection picks attributes. For example, $\pi_AR$ results in
 
-$$
-\begin{array}{c|c}
-A\\
-\hline
-1\\
-3
-\end{array}
-$$
+|<i>A</i>|
+|---|
+|1|
+|3|
 
 ### 3. Rename ( _&rho;_ )
 
 Rename changes the names of the attributes in the schema. For example, $\rho_{C\to A}S$ results in
 
-$$
-\begin{array}{c|c}
-B&A\\
-\hline
-2&1\\
-6&8
-\end{array}
-$$
+|<i>B</i>|<i>A</i>|
+|---|---|
+|2|1|
+|6|8|
 
 ### 4. Union ( _&cup;_ )
 
