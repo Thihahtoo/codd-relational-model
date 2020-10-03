@@ -32,12 +32,12 @@ Since the set of tuples is a set, the order of the "rows" is not important, and 
 
 The relational algebra has the following operations:
 
-1. Selection ( &sigma; )
-2. Projection ( &pi; )
-3. Rename ( &rho; )
-4. Union ( &cup; )
-5. Difference ( &minus; )
-6. Cartesian product ( &times; )
+1. Selection ( <b>&sigma;</b> )
+2. Projection ( <b>&pi;</b> )
+3. Rename ( <b>&rho;</b> )
+4. Union ( <b>&cup;</b> )
+5. Difference ( <b>&minus;</b> )
+6. Cartesian product ( <b>&times;</b> )
 
 The first three are unary operations (requiring one operand), and the others are binary operations (requiring two operands). Each operand is a relation, and the result of each operation is also a relation.
 
@@ -69,7 +69,7 @@ Rename changes the names of the attributes in the schema. For example, <b><i>&rh
 
 ### 4. Union ( &cup; )
 
-Union gives tuples that are in any of its operands, but it requires that the schemata of the operands match. For example, <b><i>R</i> &cup; <i>S</i></b> is not allowed because the schema of <b><i>R</i>({ A, B \})</b> is different from that of <b><i>S</i>({ B, C \})</b>. However, we can apply rename to <b><i>S</i></b> and then apply union: <b><i>R &cup; (&rho;<sub>C&rarr;A</sub>S)</i></b> results in
+Union gives tuples that are in any of its operands, but it requires that the schemata of the operands match. For example, <b><i>R</i> &cup; <i>S</i></b> is not allowed because the schema of <b><i>R </i>({ A, B \})</b> is different from that of <b><i>S </i>({ B, C \})</b>. However, we can apply rename to <b><i>S</i></b> and then apply union: <b><i>R &cup; (&rho;<sub>C&rarr;A</sub>S)</i></b> results in
 
 |<i>A</i>|<i>B</i>|
 |---|---|
@@ -79,7 +79,7 @@ Union gives tuples that are in any of its operands, but it requires that the sch
 
 ### 5. Difference ( &minus; )
 
-Difference gives tuples that are in the first operand but not in the second operand. As with union, it requires that the schemata of the operands match. For example, <b><i>R &minus; S</i></b> is not allowed because the schema of <b><i>R</i>({ A, B \})</b> is different from that of <b><i>S</i>({ B, C \})</b>. However, we can apply rename to <b><i>S</i></b> and then apply difference: <b><i>R &minus; (&rho;<sub>C&rarr;A</sub>S)</i></b> results in
+Difference gives tuples that are in the first operand but not in the second operand. As with union, it requires that the schemata of the operands match. For example, <b><i>R &minus; S</i></b> is not allowed because the schema of <b><i>R </i>({ A, B \})</b> is different from that of <b><i>S </i>({ B, C \})</b>. However, we can apply rename to <b><i>S</i></b> and then apply difference: <b><i>R &minus; (&rho;<sub>C&rarr;A</sub>S)</i></b> results in
 
 |<i>A</i>|<i>B</i>|
 |---|---|
