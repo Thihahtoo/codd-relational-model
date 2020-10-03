@@ -43,7 +43,7 @@ The first three are unary operations (requiring one operand), and the others are
 
 ### 1. Selection ( _&sigma;_ )
 
-Selection picks tuples satisfying a condition. For example, _&sigma; results in
+Selection picks tuples satisfying a condition. For example, /cc_&sigma;_ results in
 
 |<i>A</i>|<i>B</i>|
 |---|---|
