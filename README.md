@@ -71,40 +71,27 @@ Rename changes the names of the attributes in the schema. For example, $\rho_{C\
 
 Union gives tuples that are in any of its operands, but it requires that the schemata of the operands match. For example, $R\cup S$ is not allowed because the schema of $R$ ($\{A,B\}$) is different from that of $S$ ($\{B,C\}$). However, we can apply rename to $S$ and then apply union: $R\cup(\rho_{C\to A}S)$ results in
 
-$$
-\begin{array}{c|c}
-A&B\\
-\hline
-1&2\\
-3&4\\
-8&6
-\end{array}
-$$
+|<i>A</i>|<i>B</i>|
+|---|---|
+|1|2|
+|3|4|
+|8|6|
 
 ### 5. Difference ( _&minus;_ )
 
 Difference gives tuples that are in the first operand but not in the second operand. As with union, it requires that the schemata of the operands match. For example, $R-S$ is not allowed because the schema of $R$ ($\{A,B\}$) is different from that of $S$ ($\{B,C\}$). However, we can apply rename to $S$ and then apply difference: $R-(\rho_{C\to A}S)$ results in
 
-$$
-\begin{array}{c|c}
-A&B\\
-\hline
-3&4\\
-\end{array}
-$$
+|<i>A</i>|<i>B</i>|
+|---|---|
+|3|4|
 
 ### 6. Cartesian product ( _&times;_ )
 
 Cartesian product gives tuples resulting from concatenation of two tuples, one from each operand. If there are common attributes, the attribute is prefixed with the name of the relation it comes from followed by a dot. For example, $R\times S$ results in
 
-
-$$
-\begin{array}{c|c}
-A&R.B&S.B&C\\
-\hline
-1&2&2&4\\
-1&2&6&8\\
-3&4&2&4\\
-3&4&6&8
-\end{array}
-$$
+|<i>A</i>|<i>R.B</i>|<i>S.B</i>|<i>C</i>|
+|---|---|
+|1|2|2|4|
+|1|2|6|8|
+|3|4|2|4|
+|3|4|6|8|
