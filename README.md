@@ -91,7 +91,7 @@ Cartesian product gives tuples resulting from concatenation of two tuples, one f
 
 |<i>A</i>|<i>R.B</i>|<i>S.B</i>|<i>C</i>|
 |---|---|---|---|
-|1|2|2|4|
+|1|2|2|1|
 |1|2|6|8|
-|3|4|2|4|
+|3|4|2|1|
 |3|4|6|8|
