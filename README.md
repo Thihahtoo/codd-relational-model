@@ -60,7 +60,7 @@ Projection picks attributes. For example, <b><i>&pi;<sub>A</sub>R</i></b> result
 
 ### 3. Rename ( &rho; )
 
-Rename changes the names of the attributes in the schema. For example, <b><i>&rho;<sub>C&rho;A</sub>S</i></b> results in
+Rename changes the names of the attributes in the schema. For example, <b><i>&rho;<sub>C&#8549;A</sub>S</i></b> results in
 
 |<i>B</i>|<i>A</i>|
 |---|---|
