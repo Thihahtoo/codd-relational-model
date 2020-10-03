@@ -37,7 +37,7 @@ The relational algebra has the following operations:
 3. Rename (_&rho;_)
 4. Cartesian product (_&times;_)
 5. Union (_&cup;_)
-6. Difference ($-$)
+6. Difference (_&minus;_)
 
 The first three are unary operations (requiring one operand), and the others are binary operations (requiring two operands). Each operand is a relation, and the result of each operation is also a relation.
 
