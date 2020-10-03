@@ -90,7 +90,7 @@ Difference gives tuples that are in the first operand but not in the second oper
 Cartesian product gives tuples resulting from concatenation of two tuples, one from each operand. If there are common attributes, the attribute is prefixed with the name of the relation it comes from followed by a dot. For example, $R\times S$ results in
 
 |<i>A</i>|<i>R.B</i>|<i>S.B</i>|<i>C</i>|
-|---|---|
+|---|---|---|---|
 |1|2|2|4|
 |1|2|6|8|
 |3|4|2|4|
