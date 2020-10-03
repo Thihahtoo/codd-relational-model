@@ -32,9 +32,9 @@ Since the set of tuples is a set, the order of the "rows" is not important, and 
 
 The relational algebra has the following operations:
 
-1. Selection ($\sigma$)
-2. Projection ($\pi$)
-3. Rename ($\rho$)
+1. Selection (_&sigma;_)
+2. Projection (_&pi;_)
+3. Rename (_&rho;_)
 4. Cartesian product ($\times$)
 5. Union ($\cup$)
 6. Difference ($-$)
