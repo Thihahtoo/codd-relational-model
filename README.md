@@ -4,27 +4,20 @@
 
 Codd's relational model forms the basis of SQL databases and is one of the most commonly used data models.
 
-In this model, a database is composed of relations. A relation can be thought of as a table, but to be more precise, it has a schema, which is a set of attributes, and an instance, which is a set of tuples corresponding to the attributes. For example, let <b><i>R</i></b> be
-
-<p align = 'center'>
+In this model, a database is composed of relations. A relation can be thought of as a table, but to be more precise, it has a schema, which is a set of attributes, and an instance, which is a set of tuples corresponding to the attributes.  
+For example, let <b><i>R</i></b> be
 
 |<i>A</i>|<i>B</i>|
 |---|---|
 |1|2|
 |3|4|
 
-</p>
+and let <b><i>S</i></b> be
 
-and let $S$ be
-
-$$
-\begin{array}{c|c}
-B&C\\
-\hline
-2&1\\
-6&8
-\end{array}
-$$
+|<i>B</i>|<i>C</i>|
+|---|---|
+|2|1|
+|6|8|
 
 The schema of $R$ is $\{A,B\}$, and the instance of $R$ is $\{(1,2),(3,4)\}$. The schema of $S$ is $\{B,C\}$, and the instance of $S$ is $\{(2,1),(6,8)\}$. Although the schema is a set, its order should be consistent with the tuples in the instance. If we change the order in the schema, we also have to change the order of the tuples in the instance. The following is another representation of $R$.
 
