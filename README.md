@@ -6,14 +6,14 @@ Codd's relational model forms the basis of SQL databases and is one of the most 
 
 In this model, a database is composed of relations. A relation can be thought of as a table, but to be more precise, it has a schema, which is a set of attributes, and an instance, which is a set of tuples corresponding to the attributes. For example, let <b><i>R</i></b> be
 
-<center>
+<p align = 'center'>
 
 |<i>A</i>|<i>B</i>|
 |---|---|
 |1|2|
 |3|4|
 
-</center>
+</p>
 
 and let $S$ be
 
