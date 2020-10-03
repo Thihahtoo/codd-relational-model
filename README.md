@@ -41,7 +41,7 @@ The relational algebra has the following operations:
 
 The first three are unary operations (requiring one operand), and the others are binary operations (requiring two operands). Each operand is a relation, and the result of each operation is also a relation.
 
-### 1. Selection (:sigma:)
+### 1. Selection (:id:)
 
 Selection picks tuples satisfying a condition. For example, $\sigma_{A>1}R$ results in
 
