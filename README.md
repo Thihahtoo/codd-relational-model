@@ -69,7 +69,7 @@ Rename changes the names of the attributes in the schema. For example, <b><i>&rh
 
 ### 4. Union ( &cup; )
 
-Union gives tuples that are in any of its operands, but it requires that the schemata of the operands match. For example, $R\cup S$ is not allowed because the schema of $R$ ($\{A,B\}$) is different from that of $S$ ($\{B,C\}$). However, we can apply rename to $S$ and then apply union: $R\cup(\rho_{C\to A}S)$ results in
+Union gives tuples that are in any of its operands, but it requires that the schemata of the operands match. For example, <b><i>R</i> &cup; <i>S</i></b> is not allowed because the schema of <b><i>R</i>({ A, B \})</b> is different from that of <b><i>S</i>({ B, C \})</b>. However, we can apply rename to <b><i>S</i></b> and then apply union: <b><i>R &cup; (&rho;<sub>C&rarr;A</sub>S)</i></b> results in
 
 |<i>A</i>|<i>B</i>|
 |---|---|
